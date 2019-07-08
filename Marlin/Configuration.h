@@ -133,7 +133,7 @@
 // The following define selects which electronics board you have.
 // Please choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD AZTEEG_GT_X5
+  #define MOTHERBOARD AZTEEG_X5_GT
 #endif
 
 // Optional custom name for your RepStrap or other custom machine
@@ -1154,7 +1154,7 @@
  * Normally G28 leaves leveling disabled on completion. Enable
  * this option to have G28 restore the prior leveling state.
  */
-//#define RESTORE_LEVELING_AFTER_G28
+#define RESTORE_LEVELING_AFTER_G28
 
 /**
  * Enable detailed logging of G28, G29, M48, etc.
