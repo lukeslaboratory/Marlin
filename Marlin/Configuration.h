@@ -582,10 +582,10 @@
 
 // Uncomment one of these options to enable CoreXY, CoreXZ, or CoreYZ kinematics
 // either in the usual order or reversed
-#define COREXY
+//#define COREXY
 //#define COREXZ
 //#define COREYZ
-//#define COREYX
+#define COREYX
 //#define COREZX
 //#define COREZY
 
@@ -1034,15 +1034,15 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 390
-#define Y_BED_SIZE 296
+#define X_BED_SIZE 406
+#define Y_BED_SIZE 304
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
+#define X_MAX_POS X_BED_SIZE+110
+#define Y_MAX_POS Y_BED_SIZE+3
 #define Z_MAX_POS 355
 
 /**
@@ -1673,7 +1673,7 @@
 //
 //  Set this option if CLOCKWISE causes values to DECREASE
 //
-//#define REVERSE_ENCODER_DIRECTION
+#define REVERSE_ENCODER_DIRECTION
 
 //
 // This option reverses the encoder direction for navigating LCD menus.
