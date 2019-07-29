@@ -543,7 +543,7 @@
  *
  * *** IT IS HIGHLY RECOMMENDED TO LEAVE THIS OPTION ENABLED! ***
  */
-#define PREVENT_COLD_EXTRUSION
+//#define PREVENT_COLD_EXTRUSION
 #define EXTRUDE_MINTEMP 170
 
 /**
@@ -582,10 +582,10 @@
 
 // Uncomment one of these options to enable CoreXY, CoreXZ, or CoreYZ kinematics
 // either in the usual order or reversed
-//#define COREXY
+#define COREXY
 //#define COREXZ
 //#define COREYZ
-#define COREYX
+//#define COREYX
 //#define COREZX
 //#define COREZY
 
@@ -662,7 +662,7 @@
 //#define Y2_DRIVER_TYPE A4988
 //#define Z2_DRIVER_TYPE A4988
 //#define Z3_DRIVER_TYPE A4988
-#define E0_DRIVER_TYPE TMC2660
+#define E0_DRIVER_TYPE  TMC2660
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -1688,7 +1688,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-//#define INDIVIDUAL_AXIS_HOMING_MENU
+#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
