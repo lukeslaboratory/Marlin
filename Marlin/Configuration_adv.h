@@ -32,7 +32,7 @@
  *
  */
 #define CONFIGURATION_ADV_H_VERSION 020000
-//Configured by Luke's Lab 7-22-19
+//Configured by Luke's Lab 8-29-19
 // @section temperature
 
 //===========================================================================
@@ -766,7 +766,7 @@
  * vibration and surface artifacts. The algorithm adapts to provide the best possible step smoothing at the
  * lowest stepping frequencies.
  */
-//#define ADAPTIVE_STEP_SMOOTHING
+#define ADAPTIVE_STEP_SMOOTHING
 
 /**
  * Custom Microstepping
@@ -1633,10 +1633,10 @@
 #if HAS_TRINAMIC
 
   #define HOLD_MULTIPLIER    0.5  // Scales down the holding current from run current
-  #define INTERPOLATE       false  // Interpolate X/Y/Z_MICROSTEPS to 256
+  #define INTERPOLATE       true  // Interpolate X/Y/Z_MICROSTEPS to 256
 
   #if AXIS_IS_TMC(X)
-    #define X_CURRENT     1700  // (mA) RMS current. Multiply by 1.414 for peak current.
+    #define X_CURRENT     1400  // (mA) RMS current. Multiply by 1.414 for peak current.
     #define X_MICROSTEPS   16  // 0..256
     #define X_RSENSE     0.10
   #endif
@@ -1648,7 +1648,7 @@
   #endif
 
   #if AXIS_IS_TMC(Y)
-    #define Y_CURRENT     1700
+    #define Y_CURRENT     1400
     #define Y_MICROSTEPS   16
     #define Y_RSENSE     0.10
   #endif
@@ -1678,7 +1678,7 @@
   #endif
 
   #if AXIS_IS_TMC(E0)
-    #define E0_CURRENT    1700
+    #define E0_CURRENT    1000
     #define E0_MICROSTEPS  16
     #define E0_RSENSE    0.10
   #endif
