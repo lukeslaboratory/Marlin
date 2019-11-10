@@ -37,7 +37,7 @@
  *
  */
 #define CONFIGURATION_H_VERSION 020000
-//Configured by Luke's Laboratory 9-4-19
+//Configured by Luke's Laboratory 10-15-19
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -905,7 +905,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 35  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 19  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -2.6   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.85   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10

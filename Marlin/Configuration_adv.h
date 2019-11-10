@@ -32,7 +32,7 @@
  *
  */
 #define CONFIGURATION_ADV_H_VERSION 020000
-//Configured by Luke's Lab 8-29-19
+//Configured by Luke's Lab 10-15-19
 // @section temperature
 
 //===========================================================================
@@ -879,7 +879,7 @@
  * LED Control Menu
  * Enable this feature to add LED Control to the LCD menu
  */
-//#define LED_CONTROL_MENU
+#define LED_CONTROL_MENU
 #if ENABLED(LED_CONTROL_MENU)
   #define LED_COLOR_PRESETS                 // Enable the Preset Color menu option
   #if ENABLED(LED_COLOR_PRESETS)
@@ -1208,10 +1208,10 @@
  * See http://marlinfw.org/docs/features/lin_advance.html for full instructions.
  * Mention @Sebastianv650 on GitHub to alert the author of any issues.
  */
-//#define LIN_ADVANCE
+#define LIN_ADVANCE
 #if ENABLED(LIN_ADVANCE)
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
-  #define LIN_ADVANCE_K 1    // Unit: mm compression per 1mm/s extruder speed
+  #define LIN_ADVANCE_K .2    // Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
 #endif
 
@@ -1302,7 +1302,7 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-//#define MINIMUM_STEPPER_PULSE 2
+#define MINIMUM_STEPPER_PULSE 1
 
 /**
  * Maximum stepping rate (in Hz) the stepper driver allows
